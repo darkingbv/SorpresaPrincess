@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Girasoles de fondo -->
+    <div class="background-sunflowers">
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+        <div class="background-sunflower"></div>
+    </div>
+
+    <!-- Capibaras en las esquinas -->
+    <img src="capibara.png" alt="Capibara" class="capibara bottom-left">
+    <img src="capibara.png" alt="Capibara" class="capibara bottom-right">
+
+    <div class="container">
+        <h1 class="title">PARA TI</h1>
+        <p class="message">Eres mi chiquita preciosa 💖</p>
+        
+        <!-- Controles de audio -->
+        <div class="audio-controls">
+            <audio id="loveSong" src="Lee Hi - ONLY (Traducida al Español).mp3"></audio>
+            <button onclick="playPause()">▶️/⏸️</button>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" onchange="setVolume()">
+            <span>Volumen: <span id="volumeValue">100%</span></span>
+        </div>
+
+        <!-- Galería de fotos -->
+        <div class="gallery">
+            <img src="1.jpg" alt="Foto 1">
+            <img src="2.jpg" alt="Foto 2">
+            <img src="3.jpg" alt="Foto 3">
+        </div>
+
+        <!-- Girasoles animados en primer plano -->
+        <div class="sunflowers">
+            <div class="sunflower"></div>
+            <div class="sunflower"></div>
+            <div class="sunflower"></div>
+        </div>
+
+        <div class="heart"></div>
+        <button class="btn" onclick="showLove()">Dale click preciosa</button>
+        <p id="extraLove" class="hidden">Eres tan linda, me encanta que te chivees, tienes
+            unos lindos ojitos y una linda boquita tu carita esta muy hermosa ¡TE QUIERO MUCHO! 🌍💕</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

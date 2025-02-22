@@ -1,0 +1,361 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #72cfeb; /* Fondo amarillo claro */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Título */
+.title {
+    font-size: 3rem;
+    color: #e91e1e;
+    animation: pulse 1.5s infinite;
+}
+
+/* Mensaje */
+.message {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Controles de audio */
+.audio-controls {
+    margin: 20px 0;
+}
+
+.audio-controls button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.audio-controls button:hover {
+    background-color: #c2185b;
+}
+
+.audio-controls input[type="range"] {
+    width: 100px;
+    margin: 0 10px;
+}
+
+/* Galería de fotos */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Girasoles animados en primer plano */
+.sunflowers {
+    position: relative;
+    margin: 20px 0;
+}
+
+.sunflower {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    animation: float 6s infinite ease-in-out;
+    background-image: url('sunflower.png'); /* Imagen de un girasol */
+    background-size: cover;
+    background-position: center;
+}
+
+.sunflower:nth-child(1) {
+    left: 10%;
+    top: 20%;
+    animation-delay: 0s;
+}
+
+.sunflower:nth-child(2) {
+    left: 40%;
+    top: 50%;
+    animation-delay: 2s;
+}
+
+.sunflower:nth-child(3) {
+    left: 70%;
+    top: 30%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+/* Girasoles de fondo */
+.background-sunflowers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-sunflower {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-image: url('sunflower.png'); /* Imagen de un girasol */
+    background-size: cover;
+    background-position: center;
+    animation: floatBackground 10s infinite ease-in-out;
+}
+
+/* Posiciones y animaciones para los girasoles de fondo */
+.background-sunflower:nth-child(1) {
+    top: 5%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.background-sunflower:nth-child(2) {
+    top: 6%;
+    left: 17%;
+    animation-delay: 2s;
+}
+
+.background-sunflower:nth-child(3) {
+    top: 25%;
+    left: 5%;
+    animation-delay: 4s;
+}
+
+.background-sunflower:nth-child(4) {
+    top: 29%;
+    left: 15%;
+    animation-delay: 6s;
+}
+
+.background-sunflower:nth-child(5) {
+    top: 45%;
+    left: 5%;
+    animation-delay: 8s;
+}
+
+.background-sunflower:nth-child(6) {
+    top: 55%;
+    left: 15%;
+    animation-delay: 10s;
+}
+
+.background-sunflower:nth-child(7) {
+    top: 65%;
+    left: 4%;
+    animation-delay: 12s;
+}
+
+.background-sunflower:nth-child(8) {
+    top: 75%;
+    left: 15%;
+    animation-delay: 14s;
+}
+
+.background-sunflower:nth-child(9) {
+    top: 85%;
+    left: 45%;
+    animation-delay: 16s;
+}
+
+.background-sunflower:nth-child(10) {
+    top: 1%;
+    left: 50%;
+    animation-delay: 18s;
+}
+
+.background-sunflower:nth-child(11) {
+    top: 8%;
+    right: 5%;
+    animation-delay: 0s;
+}
+
+.background-sunflower:nth-child(12) {
+    top: 8%;
+    right: 18%;
+    animation-delay: 2s;
+}
+
+.background-sunflower:nth-child(13) {
+    top: 25%;
+    right: 7%;
+    animation-delay: 4s;
+}
+
+.background-sunflower:nth-child(14) {
+    top: 35%;
+    right: 17%;
+    animation-delay: 6s;
+}
+
+.background-sunflower:nth-child(15) {
+    top: 45%;
+    right: 8%;
+    animation-delay: 8s;
+}
+
+.background-sunflower:nth-child(16) {
+    top: 55%;
+    right: 18%;
+    animation-delay: 10s;
+}
+
+.background-sunflower:nth-child(17) {
+    top: 65%;
+    right: 7%;
+    animation-delay: 12s;
+}
+
+.background-sunflower:nth-child(18) {
+    top: 75%;
+    right: 18%;
+    animation-delay: 14s;
+}
+
+.background-sunflower:nth-child(19) {
+    top: 85%;
+    right: 60%;
+    animation-delay: 16s;
+}
+
+.background-sunflower:nth-child(20) {
+    top: 2%;
+    right: 58%;
+    animation-delay: 18s;
+}
+
+@keyframes floatBackground {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+/* Capibaras en las esquinas */
+.capibara {
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+}
+
+.capibara.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.capibara.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.capibara.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.capibara.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Corazón animado */
+.heart {
+    width: 90px;
+    height: 90px;
+    background-color: #e91e1e;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 20px auto;
+    animation: beat 1.5s infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    width: 90px;
+    height: 90px;
+    background-color: #e91e1e;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 50px;
+}
+
+/* Botón */
+.btn {
+    background-color: #e91e1e;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e91e1e;
+}
+
+/* Mensaje oculto */
+.hidden {
+    display: none;
+}
+
+/* Animaciones */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes beat {
+    0% { transform: scale(1) rotate(-45deg); }
+    50% { transform: scale(1.1) rotate(-45deg); }
+    100% { transform: scale(1) rotate(-45deg); }
+}
